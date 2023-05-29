@@ -12,12 +12,12 @@ $main-black: #000000;
 }
 
 .header__container {
-  width: 90%;
-  max-width: 1170px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -39,6 +39,7 @@ $main-black: #000000;
 .nav__ul {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
 
   list-style: none;
@@ -53,7 +54,25 @@ $main-black: #000000;
   color: $main-white;
 }
 
-.nav__link--active{
+.nav__link--active {
   color: #42a9ed;
 }
 
+@media (max-width: 768px) {
+  .header__container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__nav {
+    width: 80%;
+  }
+  .nav__ul {
+    justify-content: space-around;
+  }
+}

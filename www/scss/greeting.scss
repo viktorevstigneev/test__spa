@@ -1,6 +1,8 @@
+$main-white: #ffffff;
+
 .greeting {
-  padding-bottom: 202px;
   border-top: 1px solid transparent;
+  padding-bottom: 202px;
 
   background: url("../img/bg.jpg") 50% no-repeat;
 }
@@ -26,40 +28,52 @@
 }
 
 .greeting__caption {
-  margin-top: 80px;
-  margin-bottom: 0;
+  margin: 80px 0 0 0;
+
   font-family: "Lato";
   font-weight: 700;
 }
 
 .greeting__list {
-  margin-top: 10px;
+  margin: 10px 0 0 0;
 }
 
 .greeting__item {
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px 0 0 10px;
+
   font-family: "Lato";
 }
 
 .greeting__wrapper {
-  margin-top: 80px;
+  margin: 80px 0 0 0;
 }
 
 .greeting__link {
   padding: 15px 31.48px;
+
   font-family: "Lato";
   text-transform: uppercase;
 }
 
 .greeting__link_color--blue {
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid $main-white;
+
   background: #3e9cdc;
+  color: $main-white;
 }
 
 .greeting__link_color--white {
   border: 1px solid #6f6d7b;
+
+  background: $main-white;
   color: #2a2b30;
-  background: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .greeting__title {
+    font-size: 24px;
+  }
+  .greeting__link {
+    display: block;
+  }
 }
