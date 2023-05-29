@@ -63,6 +63,9 @@
     flex-direction: column;
     justify-content: center;
   }
+  .header__logo {
+    font-size: 18px;
+  }
   .header__nav {
     width: 80%;
   }
@@ -775,6 +778,11 @@
   }
   .footer__copyright {
     margin: 10px auto;
+  }
+}
+@media (max-width: 320px) {
+  .footer__wrapper {
+    flex-direction: column;
   }
 }
 html {

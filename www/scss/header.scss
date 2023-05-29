@@ -69,6 +69,10 @@ $main-black: #000000;
     flex-direction: column;
     justify-content: center;
   }
+
+  .header__logo {
+    font-size: 18px;
+  }
   .header__nav {
     width: 80%;
   }

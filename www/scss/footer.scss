@@ -118,4 +118,7 @@
 }
 
 @media (max-width: 320px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
 }
