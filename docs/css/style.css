@@ -55,7 +55,7 @@
 .greeting {
   padding-bottom: 202px;
   border-top: 1px solid transparent;
-  background: url("../img/bg.png") 50% no-repeat;
+  background: url("../img/bg.jpg") 50% no-repeat;
 }
 
 .greeting__container {
@@ -261,6 +261,10 @@
 
 .form__rigth {
   width: 30%;
+}
+
+.form__label {
+  display: none;
 }
 
 .form__input {
@@ -616,14 +620,25 @@
   width: fit-content;
   justify-content: space-between;
   align-items: center;
+  font-family: "Lato";
 }
 .footer__wrapper:not(:last-child)::after {
   content: "";
   display: block;
-  margin-left: 40.33px;
+  margin-left: 20px;
   height: 18px;
   width: 1px;
   background: #c3c3c3;
+}
+
+.footer__copyright {
+  margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer__text {
+  text-transform: uppercase;
 }
 
 .footer__pay {
@@ -669,6 +684,7 @@
   position: relative;
   margin: 0 0 0 48px;
   font-family: "Lato";
+  color: #ffffff;
 }
 
 .footer__contact--mail::before {

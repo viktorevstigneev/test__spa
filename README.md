@@ -21,3 +21,9 @@ To create a development build:
 ```sh
 npm start
 ```
+## Test of lighthouse
+![ligthhouse test points image](./www/img/lighthouse.PNG)
+
+## Site is available on git pages
+
+https://viktorevstigneev.github.io/test__spa/

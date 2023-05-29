@@ -47,7 +47,7 @@ gulp.task("css", () => {
 gulp.task("images", () => {
   return (
     gulp
-      .src("www/img/*.{png,jpg}")
+      .src("www/img/*.{png,jpg, webp}")
       // .pipe(
       //   imagemin([
       //     imagemin.optipng({ optimizationLevel: 3 }),

@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Author: V.V. Evstigneev, page to pass test exam"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Lorem ipsum page</title>
   </head>
@@ -25,7 +29,7 @@
               <a href="#" class="nav__link">Цены</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Оформить заказ</a>
+              <a href="#order" class="nav__link">Оформить заказ</a>
             </li>
           </ul>
         </nav>
@@ -102,13 +106,13 @@
             </li>
           </ul>
 
-          <form action="" class="order__form form">
+          <form class="order__form form" id="order" action="">
             <div class="form__container">
               <div class="form__left">
                 <div class="form__select select__Wrapper">
                   <select
                     class="select__Native js-select__Native"
-                    aria-labelledby="jobLabel"
+                    aria-labelledby="systemType"
                   >
                     <option value="sel" disabled="" selected="">
                       Выберите тип системы
@@ -147,33 +151,67 @@
                   </div>
                 </div>
 
+                <label class="form__label" for="email" aria-label="emai"
+                  >Ваш e-mail</label
+                >
                 <input
                   class="form__input"
+                  id="email"
                   type="email"
                   placeholder="Ваш e-mail"
+                  name="emai"
                 />
 
                 <div class="form__slider-wrapper">
                   <div class="form__slider-top">
-                    <label class="form__slider-label" for="">
+                    <label
+                      class="form__slider-label"
+                      for="percent"
+                      aria-labelledby="percent Of Something"
+                    >
                       Sed ut perspiciatis, unde omnis iste natus
                     </label>
                     <p class="form__slider-progress">75%</p>
                   </div>
-                  <input class="form__slider" type="range" max="100" min="0" value="75"/>
+                  <input
+                    class="form__slider"
+                    id="percent"
+                    type="range"
+                    max="100"
+                    min="0"
+                    value="75"
+                    name="percent"
+                  />
                 </div>
               </div>
               <div class="form__rigth">
+                <label class="form__label" for="name" aria-label="your name"
+                  >Ваше имя</label
+                >
                 <input
                   class="form__input form__input--width"
+                  id="name"
                   type="text"
                   placeholder="Ваше имя"
+                  name="name"
                 />
-                <label class="form__file-label" for="attachment">Прикрепить файл </label>
-                <input class="form__file" id="attachment" type="file" />
+                <label
+                  class="form__file-label"
+                  for="attachment"
+                  aria-labelledby="attach file"
+                  >Прикрепить файл
+                </label>
+                <input
+                  class="form__file"
+                  id="attachment"
+                  type="file"
+                  name="attachment"
+                />
               </div>
             </div>
-            <button class="form__submit" type="submit">отправить</button>
+            <button class="form__submit" type="submit" role="button">
+              отправить
+            </button>
           </form>
         </div>
       </section>
@@ -181,7 +219,10 @@
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__wrapper">
-            &copy; 2018 «LoremIpsum.net» Все права защищены.
+            <p class="footer__copyright">
+              &copy;
+              <span class="footer__text">2018 «LoremIpsum.net </span>» Все права защищены.
+            </p>
           </div>
 
           <div class="footer__wrapper">
@@ -190,12 +231,19 @@
             <p class="footer__pay footer__pay--web">Web Money</p>
           </div>
           <div class="footer__wrapper">
-            <a class="footer__contact footer__contact--mail"
-              >info@ipsum228.com</a
+            <a
+              class="footer__contact footer__contact--mail"
+              href="mailto:info@ipsum228.com"
             >
-            <a class="footer__contact footer__contact--vkontakte"
-              >Мы вконтакте</a
+              info@ipsum228.com
+            </a>
+            <a
+              class="footer__contact footer__contact--vkontakte"
+              href="https://vk.com/"
+              target="_blank"
             >
+              Мы вконтакте
+            </a>
           </div>
         </div>
       </footer>
