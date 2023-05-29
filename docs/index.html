@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Lorem ipsum page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="#">
+          LoremIpsum.<strong class="header__backlight">Net</strong>
+        </a>
+
+        <nav class="header__nav nav">
+          <ul class="nav__ul">
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--active">Бизнес</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Цены</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Оформить заказ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="greeting">
+        <div class="greeting__container">
+          <h1 class="greeting__title">
+            <strong class="greeting__backlight">Lorem ipsum</strong> dolor sit
+            ametconsectetur
+            <strong class="greeting__backlight">adipiscing</strong>
+          </h1>
+
+          <p class="greeting__caption">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </p>
+          <ul class="greeting__list">
+            <li class="greeting__item">- Totam rem aperiam eaque ipsa</li>
+            <li class="greeting__item">
+              - Sit voluptatem accusantium doloremque laudantium
+            </li>
+            <li class="greeting__item">
+              - Sed ut perspiciatis, unde omnis iste natus error
+            </li>
+          </ul>
+
+          <div class="greeting__wrapper">
+            <a href="#" class="greeting__link greeting__link_color--blue">Заказать</a>
+            <a href="#" class="greeting__link greeting__link_color--white">Подробнее</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="order">
+        <div class="order__container">
+          <h2 class="order__title">
+            Оформление <strong class="order__backlight">заказа</strong>
+          </h2>
+          <p class="order__caption">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </p>
+
+          <ul class="order__list list">
+            <li class="list__item">
+              <div class="list__icon list__icon--search"></div>
+              <p class="list__caption">Lorem ipsum dolor sit amet</p>
+            </li>
+
+            <li class="list__item">
+              <div class="list__icon list__icon--percent"></div>
+              <p class="list__caption">Сonsecteturadipiscing elit</p>
+            </li>
+
+            <li class="list__item">
+              <div class="list__icon list__icon--folder"></div>
+              <p class="list__caption">Sed do eiusmod tempor</p>
+            </li>
+
+            <li class="list__item">
+              <div class="list__icon list__icon--message"></div>
+              <p class="list__caption">Esse cillum dolore eu fugiat</p>
+            </li>
+
+            <li class="list__item">
+              <div class="list__icon list__icon--currency"></div>
+              <p class="list__caption">
+                Excepteur sint occaecat cupidatat non proident
+              </p>
+            </li>
+          </ul>
+
+          <form action="" class="order__form form">
+            <div class="form__container">
+              <div class="form__left">
+                <div class="form__select select__Wrapper">
+                  <select class="select__Native js-select__Native" aria-labelledby="jobLabel">
+                    <option value="sel" disabled="" selected="">
+                      Выберите тип системы
+                    </option>
+                    <option value="ds">Sed ut perspiciatis</option>
+                    <option value="fe">Nemo enim ipsam</option>
+                    <option value="be">Et harum quidem</option>
+                    <option value="qa">Temporibus autem</option>
+                    <option value="un">Itaque earum rerum</option>
+                  </select>
+
+                  <div class="select__Custom js-select__Custom" aria-hidden="true">
+                    <div class="select__Custom-trigger">
+                      Выберите тип системы
+                    </div>
+                    <div class="select__Custom-options">
+                      <div class="select__Custom-option" data-value="ds">
+                        Sed ut perspiciatis
+                      </div>
+                      <div class="select__Custom-option" data-value="fe">
+                        Nemo enim ipsam
+                      </div>
+                      <div class="select__Custom-option" data-value="be">
+                        Et harum quidem
+                      </div>
+                      <div class="select__Custom-option" data-value="qa">
+                        Temporibus autem
+                      </div>
+                      <div class="select__Custom-option" data-value="un">
+                        Itaque earum rerum
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <input class="form__input" type="email" placeholder="Ваш e-mail">
+
+                <div class="form__slider-wrapper">
+                  <div class="form__slider-top">
+                    <label class="form__slider-label" for="">
+                      Sed ut perspiciatis, unde omnis iste natus
+                    </label>
+                    <p class="form__slider-progress">75%</p>
+                  </div>
+                  <input class="form__slider" type="range" max="100" min="0" value="75">
+                </div>
+              </div>
+              <div class="form__rigth">
+                <input class="form__input form__input--width" type="text" placeholder="Ваше имя">
+                <label class="form__file-label" for="attachment">Прикрепить файл </label>
+                <input class="form__file" id="attachment" type="file">
+              </div>
+            </div>
+            <button class="form__submit" type="submit">отправить</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__wrapper">
+            &copy; 2018 «LoremIpsum.net» Все права защищены.
+          </div>
+
+          <div class="footer__wrapper">
+            <p class="footer__pay footer__pay--qiwi">Qiwi wallet</p>
+            <p class="footer__pay footer__pay--yandex">Yandex Money</p>
+            <p class="footer__pay footer__pay--web">Web Money</p>
+          </div>
+          <div class="footer__wrapper">
+            <a class="footer__contact footer__contact--mail">info@ipsum228.com</a>
+            <a class="footer__contact footer__contact--vkontakte">Мы вконтакте</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

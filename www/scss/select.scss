@@ -1,0 +1,143 @@
+.select__Native,
+.select__Custom {
+  position: relative;
+  width: 100%;
+}
+
+.select__Custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // display: none;
+}
+
+@media (hover: hover) {
+  .select__Custom {
+    display: block;
+  }
+
+  .select__Native:focus + .select__Custom {
+    display: none;
+  }
+}
+
+
+.select__Native:focus,
+.select__Custom.isActive .select__Custom-trigger {
+  outline: none;
+  background: #3d4050;
+  color: #fff;
+}
+
+.select__ {
+  position: relative;
+}
+
+.select__Label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.select__Wrapper {
+  position: relative;
+  width: 40%;
+}
+
+.select__Native,
+.select__Custom-trigger {
+  background-color: #fff;
+  border: 1px solid #6f6f6f;
+
+}
+
+.select__Native {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 0.8rem;
+  padding: 0rem 0.8rem;
+}
+
+.select__Custom-trigger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+.select__Custom-trigger::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 17px;
+  right: 10px;
+
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.select__Custom-trigger:hover {
+  border-color: #42A9ED;
+}
+
+.select__Custom-options {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  overflow-y: auto;
+  border: 1px solid #6f6f6f;
+  background-color: #fff;
+  color: #ffffff;
+  z-index: 1;
+  padding: 0.8rem 0;
+  display: none;
+}
+
+.select__Custom.isActive .select__Custom-options {
+  display: block;
+  background: #272733;
+}
+
+.select__Custom.isActive .select__Custom-trigger::after {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  border-color: #ffffff;
+}
+
+.select__Custom-option {
+  position: relative;
+  padding: 0.8rem;
+  padding-left: 2.5rem;
+}
+
+.select__Custom-option.isHover,
+.select__Custom-option:hover {
+  color: #42A9ED;
+  cursor: pointer;
+}
+
+.select__Custom-option:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.select__Custom-option.isActive::before {
+  content: "✓";
+  position: absolute;
+  left: 0.8rem;
+}
