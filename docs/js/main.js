@@ -136,6 +136,30 @@ elSelectNative.addEventListener("change", (e) => {
   updateCustomSelectChecked(value, elRespectiveCustomOption.textContent);
 });
 
+(function () {
+  var elements = document.querySelectorAll(".lazy__load");
+  var index = 0;
+
+  var lazyLoad = function () {
+    if (index >= elements.length) return;
+    var item = elements[index];
+    if (this.scrollY + this.innerHeight > item.offsetTop) {
+      item.classList.add("active")
+      item.addEventListener("load", function () {
+        item.classList.remove("active");
+      });
+      index++;
+      lazyLoad();
+    }
+
+  };
+  var init = function () {
+    window.addEventListener("scroll", lazyLoad);
+    lazyLoad();
+  };
+  return init();
+})();
+
 customOptsList.forEach(function (elOption, index) {
   elOption.addEventListener("click", (e) => {
     const value = e.target.getAttribute("data-value");

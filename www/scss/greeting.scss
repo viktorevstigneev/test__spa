@@ -53,6 +53,22 @@ $main-white: #ffffff;
 
   font-family: "Lato";
   text-transform: uppercase;
+
+  transition: 0.5s;
+
+  &:first-child:hover {
+    border: 1px solid #42a9ed;
+    background: #ffffff;
+    color: #42a9ed;
+    border-radius: 10px;
+  }
+
+   &:last-child:hover {
+    border: 1px solid #ffffff;
+    background: #42a9ed;
+    color: #ffffff;
+    border-radius: 10px;
+  }
 }
 
 .greeting__link_color--blue {
@@ -76,7 +92,7 @@ $main-white: #ffffff;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .greeting {
     padding: 0 0 102px 0;
     background-position: 5%;

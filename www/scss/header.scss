@@ -46,12 +46,22 @@ $main-black: #000000;
 }
 
 .nav__link {
+  border: 1px solid transparent;
+  padding: 10px;
   font-family: "Lato";
   font-size: 13px;
   text-transform: uppercase;
   text-decoration: none;
 
   color: $main-white;
+
+  transition: 1s;
+
+  &:hover {
+    border: 1px solid #42a9ed;
+    color: #42a9ed;
+    border-radius: 10px;
+  }
 }
 
 .nav__link--active {
@@ -64,7 +74,7 @@ $main-black: #000000;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .header__container {
     flex-direction: column;
     justify-content: center;

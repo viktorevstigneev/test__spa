@@ -141,7 +141,13 @@
   left: 0.8rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+  .select__Wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 380px) {
   .select__Wrapper {
     width: 100%;
   }

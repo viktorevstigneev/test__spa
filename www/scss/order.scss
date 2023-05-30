@@ -178,6 +178,7 @@
 
   background: transparent;
 
+  cursor: pointer;
   -webkit-appearance: none;
 }
 
@@ -322,6 +323,8 @@
   font-family: "Lato";
   text-align: center;
 
+  cursor: pointer;
+
   &::before {
     content: "";
     display: block;
@@ -338,13 +341,25 @@
 .form__submit {
   display: block;
   width: fit-content;
+  border: 1px solid #ffffff;
+  border: 1px solid #ffffff;
   padding: 17.5px 124.98px;
   margin: 40px auto 0;
+
   background: #3e9cdc;
-  border: 1px solid #ffffff;
   text-transform: uppercase;
   color: #ffffff;
   font-family: "Lato";
+
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #42a9ed;
+    background: #ffffff;
+    color: #42a9ed;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -371,12 +386,16 @@
     }
   }
 
+  .form__left {
+    width: 60%;
+  }
+
   .form__submit {
     padding: 10px 50px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .list__item {
     width: 200px;
     margin: 20px 0 0 0;
