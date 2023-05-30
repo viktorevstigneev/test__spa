@@ -2,7 +2,7 @@ $main-white: #ffffff;
 
 .greeting {
   border-top: 1px solid transparent;
-  padding-bottom: 202px;
+  padding: 0 0 202px 0;
 
   background: url("../img/bg.jpg") 50% no-repeat;
 }
@@ -17,7 +17,7 @@ $main-white: #ffffff;
   width: 50%;
 
   text-align: left;
-  margin-top: 203px;
+  margin: 203px 0 0 0;
 
   font-family: "Lato";
   text-transform: uppercase;
@@ -69,11 +69,29 @@ $main-white: #ffffff;
   color: #2a2b30;
 }
 
+@media (max-width: 768px) {
+  .greeting {
+    background-position: 70%;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 320px) {
+  .greeting {
+    padding: 0 0 102px 0;
+    background-position: 5%;
+    background-size: cover;
+  }
+
   .greeting__title {
-    font-size: 24px;
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
   }
   .greeting__link {
     display: block;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
   }
 }

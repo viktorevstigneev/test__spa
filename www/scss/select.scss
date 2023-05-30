@@ -8,7 +8,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  // display: none;
 }
 
 @media (hover: hover) {
@@ -20,7 +19,6 @@
     display: none;
   }
 }
-
 
 .select__Native:focus,
 .select__Custom.isActive .select__Custom-trigger {
@@ -49,6 +47,7 @@
   background-color: #fff;
   border: 1px solid #6f6f6f;
 
+  font-family: "Lato";
 }
 
 .select__Native {
@@ -87,7 +86,7 @@
 }
 
 .select__Custom-trigger:hover {
-  border-color: #42A9ED;
+  border-color: #42a9ed;
 }
 
 .select__Custom-options {
@@ -124,7 +123,7 @@
 
 .select__Custom-option.isHover,
 .select__Custom-option:hover {
-  color: #42A9ED;
+  color: #42a9ed;
   cursor: pointer;
 }
 
@@ -140,4 +139,10 @@
   content: "✓";
   position: absolute;
   left: 0.8rem;
+}
+
+@media (max-width: 320px) {
+  .select__Wrapper {
+    width: 100%;
+  }
 }
