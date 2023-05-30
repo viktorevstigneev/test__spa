@@ -147,6 +147,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .select__Wrapper {
+    width: 100%;
+  }
+}
+
 @media (max-width: 380px) {
   .select__Wrapper {
     width: 100%;

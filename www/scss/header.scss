@@ -80,7 +80,7 @@ $main-black: #000000;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   .header__container {
     flex-direction: column;
     justify-content: center;
@@ -97,3 +97,4 @@ $main-black: #000000;
     line-height: 25px;
   }
 }
+
