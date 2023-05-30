@@ -370,24 +370,23 @@
   .list__item {
     width: 200px;
     margin: 20px 0 0 0;
-    &:not(:last-child)::after {
-      right: -15px;
-      width: 20px;
-      border-bottom: 6px dotted;
-    }
-
-    &:nth-child(3)::after {
-      border: none;
-    }
-
-    &:nth-child(4)::after {
-      width: 150px;
-      right: -150px;
+    &::after {
+      display: none;
     }
   }
 
+  .form__container {
+    flex-direction: column;
+    justify-content: center;
+  }
   .form__left {
     width: 60%;
+    margin: 0 auto;
+  }
+
+  .form__rigth {
+    width: 60%;
+    margin: 30px auto 0;
   }
 
   .form__submit {

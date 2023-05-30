@@ -68,6 +68,12 @@ $main-black: #000000;
   color: #42a9ed;
 }
 
+@media (max-width: 900px) {
+  .header__nav {
+    width: 65%;
+  }
+}
+
 @media (max-width: 768px) {
   .header__container {
     flex-wrap: wrap;
